@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>OD Form Submission</title>
+
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&family=Poppins:wght@300;500&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;700&family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="top">
+    <header>
+
+      <h1><i class="fas fa-sticky-note"></i> OD Form</h1>
+    </header>
+    <br>
+    <br><br>
+  </section>
+
+  <section id="form">
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-header">
+          <h2>Enter Your Details</h2>
+        </div>
+        <div class="card-body">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">First name</label><i class="fas fa-sm fa-asterisk"></i>
+              <input type="text" class="form-control" id="firstName" required>
+
+              <div class="invalid-feedback">
+                This field is empty.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Last name</label><i class="fas fa-sm fa-asterisk"></i>
+              <input type="text" class="form-control" id="lastName" required>
+
+              <div class="invalid-feedback">
+                This field is empty.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Father's Name</label><i class="fas fa-sm fa-asterisk"></i>
+              <input type="text" class="form-control" id="fatherName" required>
+
+              <div class="invalid-feedback">
+                This field is empty.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Mother's Name</label><i class="fas fa-sm fa-asterisk"></i>
+              <input type="text" class="form-control" id="motherName" required>
+
+              <div class="invalid-feedback">
+                This field is empty.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">Registration No:</label><i class="fas fa-sm fa-asterisk"></i>
+              <input type="text" class="form-control" id="regno" required>
+              <div class="valid-feedback">
+                Valid Registration no
+              </div>
+              <div class="invalid-feedback">
+                Enter Registration no.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">Semester</label><i class="fas fa-sm fa-asterisk"></i>
+              <select class="form-select" id="semester" required>
+                <option selected disabled value="">Choose your semester</option>
+                <option>I</option>
+                <option>II</option>
+                <option>III</option>
+                <option>IV</option>
+                <option>V</option>
+                <option>VI</option>
+                <option>VII</option>
+                <option>VIII</option>
+              </select>
+
+              <div class="invalid-feedback">
+                Please select your Semester.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">Degree</label><i class="fas fa-sm fa-asterisk"></i>
+              <input type="text" class="form-control" id="degree" required>
+
+              <div class="invalid-feedback">
+                Please enter your Degree
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">Branch</label><i class="fas fa-sm fa-asterisk"></i>
+              <select class="form-select" id="branch" required>
+                <option selected disabled value="">Choose your Branch</option>
+                <option>Automobile Engineering</option>
+                <option>Biotechnology</option>
+                <option>Chemical Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Computer Science Engineering</option>
+                <option>Electrical and Electronics Engineering</option>
+                <option>Electronics and Communication Engineering</option>
+                <option>Information Technology</option>
+                <option>Mechanical Engineering</option>
+                <option>Marine engineering</option>
+              </select>
+
+              <div class="invalid-feedback">
+                Please select your Branch.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">OD Type</label><i class="fas fa-sm fa-asterisk"></i>
+              <select class="form-select" id="odType" required>
+                <option selected disabled value="">Please Select</option>
+                <option>Normal OD</option>
+                <option>Special OD</option>
+              </select>
+
+              <div class="invalid-feedback">
+                Please select your OD Type
+              </div>
+            </div>
+
+
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">OD Leave Type</label><i class="fas fa-sm fa-asterisk"></i>
+              <select class="form-select" id="odLeaveType" required>
+                <option selected disabled value="">Please Select</option>
+                <option>Visit to NIT for Campus</option>
+                <option>Sports Week</option>
+                <option>Medical Leave</option>
+                <option>Placement</option>
+                <option>Other</option>
+              </select>
+
+              <div class="invalid-feedback">
+                Please select your OD Leave Type
+              </div>
+            </div>
+
+            <div class="col-md-3">
+
+
+              <label for="validationCustom02" class="form-label" for="fromdate">OD Date</label><i class="fas fa-sm fa-asterisk"></i>
+              <input type="date" class="form-control" id="fromdate" required>
+
+              <div class="invalid-feedback">
+                Date is empty!
+              </div>
+            </div>
+            <div class="col-md-3">
+
+
+              <label for="validationCustom02" class="form-label" for="todate">To Date</label><i class="fas fa-sm fa-asterisk"></i>
+              <input type="date" class="form-control" id="todate" required>
+
+              <div class="invalid-feedback">
+                Date is empty!
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <label for="reasonTextBox" class="form-label">Reason</label><i class="fas fa-sm fa-asterisk"></i>
+              <textarea class="form-control" id="reasonTextBox" rows="3" required></textarea>
+
+              <div class="invalid-feedback">
+                This field is empty.
+              </div>
+            </div>
+
+
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  All the above information are correct.
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+
+              <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Submit
+              </button>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Incorrect Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-body">Entered details are incorrect or left empty, please check again.
+
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>

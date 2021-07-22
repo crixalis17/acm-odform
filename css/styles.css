@@ -1,0 +1,36 @@
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "Inknut Antiqua", cursive;
+  font-weight: 200;
+}
+
+h2{
+  font-family: 'Encode Sans SC', sans-serif;
+ font-weight: 700;
+ font-size: 2.5rem;
+}
+label{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+}
+i{
+  color: red;
+}
+.container-fluid{
+  padding:3% 7%;
+}
+.card-header{
+  background-color: #B05B3B;
+  padding: 2% 2%;
+  text-align: center;
+}
+.card-body{
+  background-color: #FFEBC9;
+}
